@@ -25,9 +25,9 @@ from aiogram.filters import Command
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
-CREATOR_USERNAME = os.getenv("CREATOR_USERNAME", "@asdewrx")
-CREATOR_CHANNEL = os.getenv("CREATOR_CHANNEL", "https://t.me/+xbKZl2_ZMMg2YWEy")
-BOT_USERNAME = os.getenv("BOT_USERNAME", "SphereStasticsRegulator_bot").lstrip("@")
+CREATOR_USERNAME = os.getenv("CREATOR_USERNAME", "@default_username")
+CREATOR_CHANNEL = os.getenv("CREATOR_CHANNEL", "https://t.me")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "YourDefaultBot_bot").lstrip("@")
 
 # ===== БАЗА ДАННЫХ =====
 
