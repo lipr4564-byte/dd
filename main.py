@@ -356,7 +356,7 @@ async def cmd_start(message: Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(
             text="Добавить в группу",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            url=f"https://t.me{BOT_USERNAME.replace('@', '')}?startgroup=true",
             icon_custom_emoji_id="5222148368955877900"
         )],
         [InlineKeyboardButton(
@@ -546,7 +546,7 @@ async def back_to_start(callback: CallbackQuery):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(
             text="Добавить в группу",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            url=f"https://t.me{BOT_USERNAME.replace('@', '')}?startgroup=true",
             icon_custom_emoji_id="5222148368955877900"
         )],
         [InlineKeyboardButton(
